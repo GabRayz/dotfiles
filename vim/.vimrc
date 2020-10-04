@@ -30,6 +30,13 @@ set shiftwidth=4
 set expandtab
 set smartindent
 
+" Custom mappings
+"" Add empty braces body below this line
+map Be o{<Enter><Esc>ko
+"" Encapsulates this line in a braces body
+map Bl ddO{<Enter><Esc>P
+
+
 let git_settings = system("git config --get vim.settings")
 if strlen(git_settings)
     exe "set" git_settings
