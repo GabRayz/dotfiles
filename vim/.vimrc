@@ -36,6 +36,13 @@ map Be o{<Enter><Esc>ko
 "" Encapsulates this line in a braces body
 map Bl ddO{<Enter><Esc>P
 
+"" Insert blank lines below or above, while staying in NORMAL mode
+map <A-o> o<Esc>
+map <A-O> O<Esc>
+""" For mac
+map œ o<Esc>
+map Œ O<Esc>
+
 
 let git_settings = system("git config --get vim.settings")
 if strlen(git_settings)
