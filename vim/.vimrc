@@ -43,6 +43,11 @@ map <A-O> O<Esc>
 map œ o<Esc>
 map Œ O<Esc>
 
+"" Insert semi-colon at end of line
+map <A-;> A;<Esc>
+map … A;<Esc>
+map • A;<Enter>
+
 
 let git_settings = system("git config --get vim.settings")
 if strlen(git_settings)
